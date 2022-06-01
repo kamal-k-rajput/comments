@@ -5,9 +5,9 @@ function Comments(props) {
   return (
     <div className="replies">
       {console.log(props.comment)}
-      <span>{props.comment.author}</span>
-      <span>{props.comment.points}</span>
-      <span>{props.comment.timestamp}</span>
+      <span className="author">{props.comment.author}</span>
+      <span className="points">{props.comment.points}</span>
+      <span className="time">{props.comment.timestamp}</span>
       <h3>{props.comment.body}</h3>
       <div>
         <button>Reply</button>
