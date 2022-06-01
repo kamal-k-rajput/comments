@@ -1,0 +1,19 @@
+button {
+  background-color: rgb(0, 72, 255);
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+}
+.author,
+.time,
+.points {
+  margin: 10px;
+}
+.replies {
+  border: 2px solid red;
+  /* width: ; */
+  width: fit-content;
+}

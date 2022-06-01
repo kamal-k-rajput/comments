@@ -1,10 +1,13 @@
 import React from "react";
-
+import { Reply } from "./Reply";
+import "./Reply.css";
 function Comments(props) {
   return (
-    <>
+    <div className="replies">
       {console.log(props.comment)}
-      <div>{props.comment.timestamp}</div>
+      <span>{props.comment.author}</span>
+      <span>{props.comment.points}</span>
+      <span>{props.comment.timestamp}</span>
       <h3>{props.comment.body}</h3>
       <div>
         <button>Reply</button>
@@ -15,10 +18,10 @@ function Comments(props) {
       </div>
       <div>
         {props.comment.replies.map((reply) => {
-          return <div>kamal</div>;
+          return <Reply data={reply} />;
         })}
       </div>
-    </>
+    </div>
   );
 }
 
